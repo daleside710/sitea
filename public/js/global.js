@@ -45,4 +45,6 @@ $(document).ready(function () {
     });
 
     PNotify.defaults.styling = 'bootstrap4';
+
+    $('.main').css('min-height', $(window).innerHeight() - 104 - 97);
 });

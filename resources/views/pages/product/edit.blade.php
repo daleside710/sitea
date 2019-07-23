@@ -39,7 +39,7 @@
                                 @if( $attributes[$i]->type === 'text' )
                                     <input type="text" name="{{ $attributes[$i]->name }}" class="form-control" value="{{ $product_detail[ $attributes[$i]->id ] }}"/>
                                 @elseif( $attributes[$i]->type === 'number' )
-                                    <input type="number" name="{{ $attributes[$i]->name }}" class="form-control" value="{{ $product_detail[ $attributes[$i]->id ] }}"/>
+                                    <input type="number" name="{{ $attributes[$i]->name }}" class="form-control" value="{{ $product_detail[ $attributes[$i]->id ] }}" step="0.01"/>
                                 @elseif( $attributes[$i]->type === 'file' )
                                     <input type="hidden" name="is_{{ $attributes[$i]->name }}" value="0" />
                                     <input type="file" class="form-control-file" name="{{ $attributes[$i]->name }}" value="{{ $product_detail[ $attributes[$i]->id ] }}">

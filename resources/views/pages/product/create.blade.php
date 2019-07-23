@@ -48,7 +48,7 @@
                                 @if( $attributes[$i]->type === 'text' )
                                     <input type="text" name="{{ $attributes[$i]->name }}" class="form-control"/>
                                 @elseif( $attributes[$i]->type === 'number' )
-                                    <input type="number" name="{{ $attributes[$i]->name }}" class="form-control"/>
+                                    <input type="number" name="{{ $attributes[$i]->name }}" class="form-control" step="0.01"/>
                                 @elseif( $attributes[$i]->type === 'file' )
                                     <input type="file" class="form-control-file" name="{{ $attributes[$i]->name }}">
                                 @endif

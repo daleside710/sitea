@@ -118,13 +118,16 @@ class ProductController extends Controller
                         $input_data[ $attributes[$i]->name ] = trim( $req->input( $attributes[$i]->name ) );
 
                     if( $attributes[$i]->type === 'number' )
-                        $input_data[ $attributes[$i]->name ] = intval( $req->input( $attributes[$i]->name ), 10 );
+                        $input_data[ $attributes[$i]->name ] = doubleval( $req->input( $attributes[$i]->name ) );
 
                     if( $attributes[$i]->type === 'file' ){
                         $file = $req->file($attributes[$i]->name);
-                        $new_file_name = md5( time() ) . '.' . $file->getClientOriginalExtension();
-                        $file->move( public_path() . '/img/product/', $new_file_name );
-                        $input_data[ $attributes[$i]->name ] = $new_file_name;
+
+                        if( isset( $file ) ){
+                            $new_file_name = md5( time() ) . '.' . $file->getClientOriginalExtension();
+                            $file->move( public_path() . '/img/product/', $new_file_name );
+                            $input_data[ $attributes[$i]->name ] = $new_file_name;
+                        }
                     }
                 }
 
@@ -154,7 +157,7 @@ class ProductController extends Controller
                         $input_data[ $attributes[$i]->name ] = trim( $req->input( $attributes[$i]->name ) );
 
                     if( $attributes[$i]->type === 'number' )
-                        $input_data[ $attributes[$i]->name ] = intval( $req->input( $attributes[$i]->name ), 10 );
+                        $input_data[ $attributes[$i]->name ] = doubleval( $req->input( $attributes[$i]->name ) );
 
                     if( $attributes[$i]->type === 'file' ){
                         $is_file = intval( $req->input( 'is_' . $attributes[$i]->name ), 10 );

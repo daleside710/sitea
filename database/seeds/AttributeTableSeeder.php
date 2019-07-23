@@ -12,18 +12,18 @@ class AttributeTableSeeder extends Seeder
     public function run()
     {
         DB::table('attributes')->insert([
-            'name'          =>  'logo',
+            'name'          =>  'name',
             'display_order' =>  '1',
-            'type'          =>  'file',
+            'type'          =>  'text',
             'memo'          =>  '',
             'created_at'    =>  date('Y-m-d H:i:s'),
             'updated_at'    =>  date('Y-m-d H:i:s')
         ]);
 
         DB::table('attributes')->insert([
-            'name'          =>  'name',
-            'display_order' =>  '2',
-            'type'          =>  'text',
+            'name'          =>  'logo',
+            'display_order' =>  '1',
+            'type'          =>  'file',
             'memo'          =>  '',
             'created_at'    =>  date('Y-m-d H:i:s'),
             'updated_at'    =>  date('Y-m-d H:i:s')
@@ -39,7 +39,7 @@ class AttributeTableSeeder extends Seeder
         ]);
 
         DB::table('attributes')->insert([
-            'name'          =>  'memo',
+            'name'          =>  'link_url',
             'display_order' =>  '4',
             'type'          =>  'text',
             'memo'          =>  '',
