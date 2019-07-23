@@ -1,0 +1,19 @@
+/* Add here all your CSS customizations */
+#header .header-nav-features .header-nav-features-user .header-nav-features-toggle-link {
+    color: #444;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#header .header-nav-features .header-nav-features-user .header-nav-features-toggle-link .far {
+    font-size: 15.2px;
+    font-size: 0.95rem;
+    margin: 0px 2px 0 0;
+    position: relative;
+    top: 1px;
+}
+
+#header .header-nav-features .header-nav-features-user .header-nav-features-toggle-link:hover {
+    text-decoration: none;
+}

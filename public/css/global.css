@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+/*
+    Global Font
+ */
+body, h1, h2, h3, h4, h5, h6, text {
+
+}
+
+* {
+    font-size: 14px;
+}
+/*
+    Font Size
+    Pixels: 8, 9, 10, 11, 12, 14, 16, 18, 20, 22, 24, 26, 28, 36, 48, 72
+ */
+.fs-8px {
+    font-size: 8px !important;
+}
+
+.fs-9px {
+    font-size: 9px !important;
+}
+
+.fs-10px {
+    font-size: 10px !important;
+}
+
+.fs-11px {
+    font-size: 11px !important;
+}
+
+.fs-12px {
+    font-size: 12px !important;
+}
+
+.fs-14px {
+    font-size: 14px !important;
+}
+
+.fs-16px {
+    font-size: 16px !important;
+}
+
+.fs-18px {
+    font-size: 18px !important;
+}
+
+.fs-20px {
+    font-size: 20px !important;
+}
+
+.fs-22px {
+    font-size: 22px !important;
+}
+
+.fs-24px {
+    font-size: 24px !important;
+}
+
+.fs-26px {
+    font-size: 26px !important;
+}
+
+.fs-28px {
+    font-size: 28px !important;
+}
+
+.fs-36px {
+    font-size: 36px !important;
+}
+
+.fs-48px {
+    font-size: 48px !important;
+}
+
+.fs-72px {
+    font-size: 72px !important;
+}
+
+/*
+    Line Height
+ */
+.lh-30px {
+    line-height: 30px !important;
+}
+
+/*
+    Color
+ */
+
+
+/*
+    Height
+ */
+
+.h-20px {
+    height: 20px !important;
+}
+
+/*
+    Text Align
+ */
+.text-middle {
+    vertical-align: middle !important;
+}
+
+/*
+    Text View
+ */
+
+.text-break {
+    word-break: break-all;
+}
+
+/*
+    Text Color
+ */
+.color_777 {
+    color: #777 !important;
+}
+
+/*
+    Width
+ */
+.width-50px {
+    width: 50px !important;
+}
+.width-100px {
+    width: 100px !important;
+}
+.width-150px {
+    width: 150px !important;
+}
+
+.min-width-50px {
+    min-width: 50px !important;
+}
+.min-width-100px {
+    min-width: 100px !important;
+}
+.min-width-150px {
+    min-width: 150px !important;
+}
+
+/*
+    Display
+ */
+.display-none {
+    display: none !important;
+}
+
+/*
+    Border
+ */
+.border-none {
+    border: none !important;
+}
